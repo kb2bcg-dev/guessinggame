@@ -8,9 +8,14 @@
 FILES=`ls | wc -l`
 GUESS=0
 
+prompt()
+{
+	echo -n 'Please enter a guess: '
+}
+
 while [ ! ${GUESS} -eq ${FILES} ]
 do
-  echo -n 'Please enter a guess: '
+  prompt # Prompt for input
   read GUESS
 
   if [ ${GUESS} -lt ${FILES} ]
