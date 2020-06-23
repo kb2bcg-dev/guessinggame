@@ -10,7 +10,7 @@ GUESS=0
 
 prompt()
 {
-	echo -n 'Please enter a guess: '
+	echo -n 'Please enter the number of files in the directory:  '
 }
 
 while [ ! ${GUESS} -eq ${FILES} ]
